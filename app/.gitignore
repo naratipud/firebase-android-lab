@@ -1,0 +1,5 @@
+# Gradle Files
+/build
+
+# Firebase Files
+google-services.json

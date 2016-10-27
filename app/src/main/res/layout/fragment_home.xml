@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cc.naratipud.lab.firebase.DatabaseFragment">
+
+    <ImageView
+        android:id="@+id/image_logo_firebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/logo_firebase"/>
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_logo_firebase"
+        android:text="@string/msg_nav_suggest"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

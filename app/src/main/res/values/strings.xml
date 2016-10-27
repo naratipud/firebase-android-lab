@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Firebase Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navdrawer_header_profile_name">Anonymous</string>
+    <string name="navdrawer_header_profile_email">anonymous@android.com</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_database">Database</string>
+    <string name="nav_item_settings">Settings</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_nav_suggest">See Firebase Demo, please choose navigation drawer menu.</string>
+</resources>
