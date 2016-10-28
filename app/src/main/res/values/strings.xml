@@ -6,6 +6,7 @@
     <string name="navdrawer_header_profile_name">Anonymous</string>
     <string name="navdrawer_header_profile_email">anonymous@android.com</string>
     <string name="nav_item_home">Home</string>
+    <string name="nav_item_auth">Authentication</string>
     <string name="nav_item_database">Database</string>
     <string name="nav_item_settings">Settings</string>
 

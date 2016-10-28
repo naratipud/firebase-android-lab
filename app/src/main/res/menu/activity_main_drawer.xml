@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_menu_home"
             android:title="@string/nav_item_home"/>
         <item
+            android:id="@+id/nav_auth"
+            android:icon="@drawable/ic_menu_database"
+            android:title="@string/nav_item_auth"/>
+        <item
             android:id="@+id/nav_database"
             android:icon="@drawable/ic_menu_database"
             android:title="@string/nav_item_database"/>
