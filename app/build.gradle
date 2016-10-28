@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "cc.naratipud.android.firebase"
+        applicationId 'cc.naratipud.lab.firebase'
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
@@ -18,6 +18,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    return void
 }
 
 dependencies {
