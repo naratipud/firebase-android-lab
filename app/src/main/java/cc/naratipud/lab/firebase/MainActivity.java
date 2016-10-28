@@ -73,6 +73,10 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 HomeFragment homeFragment = new HomeFragment();
                 transaction.replace(R.id.fragment_container, homeFragment).commit();
                 break;
+            case R.id.nav_auth:
+                AuthFragment authFragment = new AuthFragment();
+                transaction.replace(R.id.fragment_container, authFragment).commit();
+                break;
             case R.id.nav_database:
                 DatabaseFragment databaseFragment = new DatabaseFragment();
                 transaction.replace(R.id.fragment_container, databaseFragment).commit();
