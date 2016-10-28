@@ -16,4 +16,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="msg_nav_suggest">See Firebase Demo, please choose navigation drawer menu.</string>
+    <string name="msg_unavailable">Unavailable now!</string>
+
+    <string name="auth_email_hint">Email</string>
+    <string name="auth_password_hint">Password</string>
+    <string name="action_log_in">Log in</string>
+    <string name="action_sign_up">Sign up</string>
 </resources>
