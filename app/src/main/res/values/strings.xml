@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Firebase Lab</string>
+    <string name="app_name">Firebase Android Lab</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -15,11 +15,44 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Hints -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <!-- Buttons -->
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_out">Signed Out</string>
+
+    <!-- Messages -->
     <string name="msg_nav_suggest">See Firebase Demo, please choose navigation drawer menu.</string>
     <string name="msg_unavailable">Unavailable now!</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="loading">Loading…</string>
 
-    <string name="auth_email_hint">Email</string>
-    <string name="auth_password_hint">Password</string>
-    <string name="action_log_in">Log in</string>
-    <string name="action_sign_up">Sign up</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_email_password">Email/Password Authentication</string>
+    <string name="desc_email_password">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="text_title_email_password">Email and Password</string>
 </resources>
