@@ -24,6 +24,7 @@
     <string name="create_account">Create Account</string>
     <string name="sign_out">Sign Out</string>
     <string name="signed_out">Signed Out</string>
+    <string name="link_account">Link Account</string>
 
     <!-- Messages -->
     <string name="msg_nav_suggest">See Firebase Demo, please choose navigation drawer menu.</string>
@@ -61,4 +62,7 @@
 
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
+
+    <string name="anonymous_sign_in">Anonymous Sign In</string>
+    <string name="account_linking">Account Linking</string>
 </resources>
