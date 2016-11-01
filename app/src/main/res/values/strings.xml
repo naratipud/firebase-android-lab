@@ -54,5 +54,8 @@
     <string name="label_firebase_ui">FirebaseUI Auth</string>
     <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
 
+    <string name="fmt_status_email_password">Email User: %s</string>
     <string name="text_title_email_password">Email and Password</string>
+
+    <string name="fmt_status_firebase">Firebase User: %s</string>
 </resources>
