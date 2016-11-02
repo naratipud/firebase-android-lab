@@ -72,18 +72,21 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             case R.id.nav_home:
                 HomeFragment homeFragment = new HomeFragment();
                 transaction.replace(R.id.fragment_container, homeFragment).commit();
+                mToolbar.setTitle(R.string.app_name);
                 break;
             case R.id.nav_auth:
                 AuthFragment authFragment = new AuthFragment();
                 transaction.replace(R.id.fragment_container, authFragment).commit();
+                mToolbar.setTitle(R.string.nav_item_auth);
                 break;
             case R.id.nav_database:
                 DatabaseFragment databaseFragment = new DatabaseFragment();
                 transaction.replace(R.id.fragment_container, databaseFragment).commit();
+                mToolbar.setTitle(R.string.nav_item_database);
                 break;
             case R.id.nav_settings:
-                // TODO: Add Settings activity.
-                Snackbar.make(mCoordinatorLayout, "Unavailable now!", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(mCoordinatorLayout, "Settings feature, Unavailable now!", Snackbar
+                        .LENGTH_SHORT).show();
                 break;
         }
 
