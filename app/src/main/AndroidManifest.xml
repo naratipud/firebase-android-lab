@@ -30,6 +30,10 @@
             android:name=".AnonymousAuthActivity"
             android:label="@string/label_anonymous_auth">
         </activity>
+        <activity
+            android:name=".PostActivity"
+            android:label="@string/label_firebase_database">
+        </activity>
     </application>
 
 </manifest>
