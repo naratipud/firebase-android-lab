@@ -35,10 +35,6 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabaseReference;
 
-    public DatabaseFragment() {
-        // Required empty public constructor
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -61,6 +57,10 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
         if (mAuth.getCurrentUser() != null) {
             onAuthSuccess(mAuth.getCurrentUser());
         }
+    }
+
+    public DatabaseFragment() {
+        // Required empty public constructor
     }
 
     @Override
