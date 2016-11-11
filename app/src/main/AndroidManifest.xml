@@ -33,7 +33,8 @@
         </activity>
         <activity
             android:name=".PostActivity"
-            android:label="@string/label_firebase_database">
+            android:label="@string/label_firebase_database"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 
