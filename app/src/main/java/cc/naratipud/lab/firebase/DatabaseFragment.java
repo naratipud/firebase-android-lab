@@ -192,7 +192,7 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
         writeNewUser(user.getUid(), username, userEmail);
 
         // Go to PostActivity
-        startActivity(new Intent(getActivity(), NewPostActivity.class));
+        startActivity(new Intent(getActivity(), PostActivity.class));
         getActivity().finish();
     }
 

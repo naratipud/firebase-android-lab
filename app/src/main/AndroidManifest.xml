@@ -32,7 +32,7 @@
             android:label="@string/label_anonymous_auth">
         </activity>
         <activity
-            android:name=".NewPostActivity"
+            android:name=".PostActivity"
             android:label="@string/label_firebase_database">
         </activity>
     </application>
