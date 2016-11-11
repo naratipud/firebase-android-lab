@@ -14,7 +14,6 @@ import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,8 +30,6 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout mRootLayout;
     private TextInputEditText mEmailField;
     private TextInputEditText mPasswordField;
-    private Button mSignInButton;
-    private Button mSignUpButton;
     private ProgressDialog mProgressDialog;
 
     private FirebaseAuth mAuth;
@@ -73,7 +70,7 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
                 signIn();
                 break;
             case R.id.button_sign_up:
-                // TODO: Sign up method
+                signUp();
                 break;
         }
     }
@@ -83,12 +80,10 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
         mRootLayout = (RelativeLayout) rootView.findViewById(R.id.fragment_database_layout);
         mEmailField = (TextInputEditText) rootView.findViewById(R.id.field_email);
         mPasswordField = (TextInputEditText) rootView.findViewById(R.id.field_password);
-        mSignInButton = (Button) rootView.findViewById(R.id.button_sign_in);
-        mSignUpButton = (Button) rootView.findViewById(R.id.button_sign_up);
 
         // Listeners
-        mSignInButton.setOnClickListener(this);
-        mSignUpButton.setOnClickListener(this);
+        rootView.findViewById(R.id.button_sign_in).setOnClickListener(this);
+        rootView.findViewById(R.id.button_sign_up).setOnClickListener(this);
     }
 
     private void signIn() {
@@ -115,6 +110,34 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
                     }
                 });
 
+    }
+
+    private void signUp() {
+        Log.d(TAG, "signUp");
+
+        if (!validateForm()) {
+            return;
+        }
+
+        showProgressDialog();
+        String email = mEmailField.getText().toString();
+        String password = mPasswordField.getText().toString();
+
+        mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(getActivity(), task -> {
+                    Log.d(TAG, "createUser:onComplete" + task.isSuccessful());
+
+                    hideProgressDialog();
+
+                    if (task.isSuccessful()) {
+                        onAuthSuccess(task.getResult().getUser());
+                    } else {
+                        Snackbar.make(mRootLayout, R.string.sign_in_failed, Snackbar.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(getActivity(), e -> {
+                    Snackbar.make(mRootLayout, e.getMessage(), Snackbar.LENGTH_LONG).show();
+                });
     }
 
     private boolean validateForm() {
@@ -169,7 +192,8 @@ public class DatabaseFragment extends Fragment implements View.OnClickListener {
         writeNewUser(user.getUid(), username, userEmail);
 
         // Go to PostActivity
-        startActivity(new Intent(getActivity(), PostActivity.class));
+        startActivity(new Intent(getActivity(), NewPostActivity.class));
+        getActivity().finish();
     }
 
     private String usernameFromEmail(String email) {
