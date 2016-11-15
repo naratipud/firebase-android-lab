@@ -33,10 +33,7 @@ public class PostActivity extends BaseActivity {
 
         // Button launches NewPostActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_new_post);
-        fab.setOnClickListener(v -> {
-            // TODO: Generate NewPostActivity
-//                startActivity(new Intent(PostActivity.this, NewPostActivity.class));
-        });
+        fab.setOnClickListener(v -> startActivity(new Intent(PostActivity.this, NewPostActivity.class)));
     }
 
     @Override
