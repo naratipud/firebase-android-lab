@@ -10,11 +10,11 @@ import cc.naratipud.lab.firebase.models.Post;
 
 public class PostViewHolder extends RecyclerView.ViewHolder {
 
-    private TextView titleView;
-    private TextView authorView;
-    private ImageView starView;
-    private TextView numStarsView;
-    private TextView bodyView;
+    public TextView titleView;
+    public TextView authorView;
+    public ImageView starView;
+    public TextView numStarsView;
+    public TextView bodyView;
 
     public PostViewHolder(View itemView) {
         super(itemView);
