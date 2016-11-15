@@ -49,6 +49,7 @@ dependencies {
     compile "com.android.support:cardview-v7:${supportLibVersion}"
     compile "com.google.firebase:firebase-auth:${firebaseLibVersion}"
     compile "com.google.firebase:firebase-database:${firebaseLibVersion}"
+    compile 'com.firebaseui:firebase-ui-database:1.0.0'
     testCompile 'junit:junit:4.12'
 }
 
