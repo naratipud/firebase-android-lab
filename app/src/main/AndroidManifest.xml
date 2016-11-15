@@ -36,7 +36,9 @@
             android:label="@string/label_firebase_database"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".NewPostActivity">
+        <activity
+            android:name=".NewPostActivity"
+            android:label="@string/label_new_post">
         </activity>
     </application>
 
