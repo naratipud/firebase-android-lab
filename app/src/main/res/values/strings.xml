@@ -24,6 +24,7 @@
     <string name="signed_out">Signed Out</string>
     <string name="link_account">Link Account</string>
     <string name="sign_up">Sign up</string>
+    <string name="post">Post</string>
 
     <!-- Messages -->
     <string name="msg_nav_suggest">See Firebase Demo, please choose navigation drawer menu.</string>
@@ -80,4 +81,5 @@
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec condimentum ante, quis mattis mi. Proin ut rhoncus libero, ac euismod neque. Ut suscipit, enim a facilisis consequat, orci lacus venenatis orci, at ultricies orci nulla sed ex. In condimentum viverra velit, eget feugiat libero imperdiet vel. Aenean pretium, lectus vitae bibendum bibendum, diam turpis convallis eros, quis tristique leo sapien at ipsum. Praesent eu odio id nulla lobortis auctor. Donec eget dolor eget nisl euismod commodo vel a lacus. Quisque ut justo vitae urna pharetra accumsan. Etiam dignissim neque iaculis mauris viverra, blandit rhoncus odio porttitor. Phasellus nibh arcu.</string>
     <string name="hint_title_new_post">Title</string>
     <string name="hint_write_new_post">Write your post...</string>
+    <string name="hint_write_comment">Write a comment...</string>
 </resources>
