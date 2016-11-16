@@ -71,6 +71,7 @@
     <string name="label_firebase_database">Database example</string>
     <string name="database_ref_message">message</string>
     <string name="label_new_post">New Post</string>
+    <string name="label_post_detail">Post Detail</string>
 
     <string name="tab_title_recent">Recent</string>
     <string name="tab_title_my_posts">My Posts</string>

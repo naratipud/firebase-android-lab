@@ -40,6 +40,10 @@
             android:name=".NewPostActivity"
             android:label="@string/label_new_post">
         </activity>
+        <activity
+            android:name=".PostDetailActivity"
+            android:label="@string/label_post_detail">
+        </activity>
     </application>
 
 </manifest>
