@@ -1,6 +1,7 @@
 package cc.naratipud.lab.firebase;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -26,7 +27,7 @@ import cc.naratipud.lab.firebase.viewholder.PostViewHolder;
 
 public abstract class PostListFragment extends Fragment {
 
-    private static final String TAG = "PostListFragment";
+    private static final String TAG = PostListFragment.class.getSimpleName();
 
     private DatabaseReference mDatabaseRef;
     private RecyclerView mRecyclerView;
@@ -92,9 +93,9 @@ public abstract class PostListFragment extends Fragment {
                 final String postKey = postRef.getKey();
                 viewHolder.itemView.setOnClickListener(v -> {
                     // Launch PostDetailActivity
-//                        Intent intent = new Intent(getActivity(), PostDetailActivity.class);
-//                        intent.putExtra(PostDetailActivity.EXTRA_POST_KEY, postKey);
-//                        startActivity(intent);
+                    Intent intent = new Intent(getActivity(), PostDetailActivity.class);
+                    intent.putExtra(PostDetailActivity.EXTRA_POST_KEY, postKey);
+                    startActivity(intent);
                 });
 
                 // Determine if the current user has liked this post and set UI accordingly
