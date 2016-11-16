@@ -68,7 +68,7 @@
     <string name="account_linking">Account Linking</string>
 
     <!-- Firebase Database -->
-    <string name="label_firebase_database">Firebase Database</string>
+    <string name="label_firebase_database">Database example</string>
     <string name="database_ref_message">message</string>
     <string name="label_new_post">New Post</string>
 
