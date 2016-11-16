@@ -23,7 +23,6 @@ public class PostActivity extends BaseActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle(R.string.label_firebase_database);
 
         ViewPager pager = (ViewPager) findViewById(R.id.container);
         pager.setAdapter(new PostPagerAdapter(getSupportFragmentManager()));
@@ -32,8 +31,8 @@ public class PostActivity extends BaseActivity {
         tabLayout.setupWithViewPager(pager);
 
         // Button launches NewPostActivity
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_new_post);
-        fab.setOnClickListener(v -> startActivity(new Intent(PostActivity.this, NewPostActivity.class)));
+        FloatingActionButton newPostButton = (FloatingActionButton) findViewById(R.id.fab_new_post);
+        newPostButton.setOnClickListener(v -> startActivity(new Intent(PostActivity.this, NewPostActivity.class)));
     }
 
     @Override
@@ -44,8 +43,8 @@ public class PostActivity extends BaseActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int i = item.getItemId();
-        if (i == R.id.action_logout) {
+        int id = item.getItemId();
+        if (id == R.id.action_logout) {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(this, MainActivity.class));
             finish();
