@@ -1,6 +1,7 @@
 package cc.naratipud.lab.firebase;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
@@ -31,7 +32,7 @@ import cc.naratipud.lab.firebase.models.User;
 public class PostDetailActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String TAG = PostDetailActivity.class.getSimpleName();
-    public static final String EXTRA_POST_KEY = "post_key";
+    private static final String EXTRA_POST_KEY = "post_key";
 
     private DatabaseReference mPostReference;
     private DatabaseReference mCommentsReference;
@@ -44,6 +45,12 @@ public class PostDetailActivity extends BaseActivity implements View.OnClickList
     private TextView mBodyView;
     private EditText mCommentField;
     private RecyclerView mCommentsRecycler;
+
+    public static Intent getStartIntent(Context context, String postKey) {
+        Intent intent = new Intent(context, PostDetailActivity.class);
+        intent.putExtra(EXTRA_POST_KEY, postKey);
+        return intent;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
